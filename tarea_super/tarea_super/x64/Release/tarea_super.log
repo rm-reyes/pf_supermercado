@@ -1,0 +1,8 @@
+﻿  tarea_super.cpp
+D:\UNI\3_semestre\programacion\Proyecto Final superMercado\tarea_super\tarea_super\tarea_super.cpp(10,9): warning C4101: 'q_estado': variable local sin referencia
+  Generando código
+  9 of 14 functions (64.3%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  tarea_super.vcxproj -> D:\UNI\3_semestre\programacion\Proyecto Final superMercado\tarea_super\x64\Release\tarea_super.exe
