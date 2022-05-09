@@ -141,11 +141,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Clientes.cpp" />
     <ClCompile Include="ConexionDB.cpp" />
+    <ClCompile Include="Persona.cpp" />
     <ClCompile Include="tarea_super.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Clientes.h" />
     <ClInclude Include="ConexionDB.h" />
+    <ClInclude Include="Persona.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
