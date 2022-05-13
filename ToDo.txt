@@ -24,3 +24,15 @@ James CRUD Clientes-ventas-ventas_detalle {
 
 Javier CRUD Proveedores-compras-compras_detalles
 jonathan CRUD productos-marcas
+
+
+consumidor final = 0 
+barra = boton o automatico
+el menu serie en teoria hacer un menu de por ejemplo
+1 realizar compra
+2 ingresar productos
+
+
+[simulacion de abrir caja completa idk si lo hacemosXD]
+
+James="clientes agregar las demas fornas del nit"
