@@ -1,22 +1,9 @@
-﻿  Clientes.cpp
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(171,1): warning C4267: '=': conversión de 'size_t' a 'char'; posible pérdida de datos
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,27): error C2065: 'nt': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,31): error C2065: 'gen': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,46): error C2065: 'ce': identificador no declarado
-  tarea_super.cpp
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(171,1): warning C4267: '=': conversión de 'size_t' a 'char'; posible pérdida de datos
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,27): error C2065: 'nt': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,31): error C2065: 'gen': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,46): error C2065: 'ce': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(188,40): error C2065: 'nt': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(188,44): error C2065: 'gen': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(188,59): error C2065: 'ce': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(199,39): error C2065: 'nt': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(199,43): error C2065: 'gen': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(199,58): error C2065: 'ce': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(233,39): error C2065: 'nt': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(233,43): error C2065: 'gen': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(233,58): error C2065: 'ce': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(241,39): error C2065: 'nt': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(241,43): error C2065: 'gen': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(241,58): error C2065: 'ce': identificador no declarado
+﻿  tarea_super.cpp
+D:\UNI\3_semestre\programacion\pf_final_versiones\pf_supermercado\tarea_super\tarea_super\Clientes.h(171,1): warning C4267: '=': conversión de 'size_t' a 'char'; posible pérdida de datos
+  ventas.cpp
+  Generando código
+  13 of 172 functions ( 7.6%) were compiled, the rest were copied from previous compilation.
+    11 functions were new in current compilation
+    30 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  tarea_super.vcxproj -> D:\UNI\3_semestre\programacion\pf_final_versiones\pf_supermercado\tarea_super\x64\Release\tarea_super.exe

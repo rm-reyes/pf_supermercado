@@ -207,6 +207,7 @@ public:
         }
         else {
             dcorrecto = resultado;
+
         }
 
         if (dcorrecto == (digito - '0')) {
@@ -230,8 +231,7 @@ public:
 
     }
   
-        Empleados(string nom, string ape, string dir, string tel, string dpi, string ge, string fn, string idpuesto, string fi, string fin, string v) :
-        Persona(nom, ape, nt, gen, dir, tel, ce) {
+        Empleados(string nom, string ape, string nt, string gen , string dir, string tel, string ce, string dpi, string ge, string fn, string idpuesto, string fi, string fin, string v) : Persona(nom, ape, nt, gen, dir, tel, ce) {
 
         fecha_inicio_l = fi;
         fecha_ingreso = fin;
@@ -304,8 +304,8 @@ public:
         int q_estado;
         ConexionBD cn = ConexionBD();
         cn.abrir_conexion();
-        if (cn.getConectar()) {
-           string insert = "INSERT INTO empleados(nombres,apellidos,direccion,telefono,DPI,genero,fecha_nacimiento,idPuesto, fecha_inicio_labores,fechaingreso)VALUES('" + nombres + "','" + apellidos + "','" + direccion + "','" + telefono + "','" +  DPI + "','" + genero + "','" + fecha_nacimiento + "','" + idPuesto + "','" + fecha_inicio_l + "','" + fecha_ingreso+ "'); ";
+        if (cn.getConectar()) {    //error en insert fecha_nacimiento arreglar.
+           string insert = "INSERT INTO empleados(nombres,apellidos,direccion,telefono,DPI,genero,fecha_nacimiento,idPuesto,fecha_inicio_labores,fechaingreso)VALUES('" + nombres + "','" + apellidos + "','" + direccion + "','" + telefono + "','" +  DPI + "','" + genero + "','" + fecha_nacimiento + "','" + idPuesto + "','" + fecha_inicio_l + "','" + fecha_ingreso+ "'); ";
            const char* i = insert.c_str();
            q_estado = mysql_query(cn.getConectar(), i);
             if (!q_estado) {
@@ -317,7 +317,7 @@ public:
 
         }
         else {
-            cout << "Error al leer" << endl;
+            cout << "Error al crear" << endl;
             system("pause");
         }
         cn.cerrar_conexion();
@@ -376,5 +376,114 @@ public:
         system("pause");
 
     }
+
+
+       void leerPuesto() {
+           int q_estado;
+           ConexionBD cn = ConexionBD();
+           MYSQL_ROW fila;
+           MYSQL_RES* resultado;
+           cn.abrir_conexion();
+           if (cn.getConectar()) {
+               cout << "------------ DATOS DE LOS EMPLEADOS ------------" << endl;
+               string consulta = "select * from puestos";
+               const char* c = consulta.c_str();
+               q_estado = mysql_query(cn.getConectar(), c);
+               if (!q_estado) {
+                   resultado = mysql_store_result(cn.getConectar());
+                   while (fila = mysql_fetch_row(resultado)) {
+                       cout << fila[0] << "," << fila[1] << "," << fila[2] << "," << fila[3] << "," << fila[4] << "," << fila[5] << "," << fila[6] << "," << fila[7] << "," << fila[9] << "," << fila[10] << endl;
+                   }
+
+               }
+               else {
+                   cout << " ----- Error  -----" << endl;
+               }
+
+           }
+           else {
+               cout << "Error al leer" << endl;
+               system("pause");
+           }
+           cn.cerrar_conexion();
+       }
+
+
+       void crearpuesto() {
+           int q_estado;
+           ConexionBD cn = ConexionBD();
+           cn.abrir_conexion();
+           if (cn.getConectar()) {    //error en insert fecha_nacimiento arreglar.
+               string insert = "INSERT INTO puestos(puesto)VALUES('" + nombres + "'); ";
+               const char* i = insert.c_str();
+               q_estado = mysql_query(cn.getConectar(), i);
+               if (!q_estado) {
+                   cout << "ingreso exitoso" << endl;
+               }
+               else {
+                   cout << "error al insertar" << endl;
+               }
+
+           }
+           else {
+               cout << "Error al crear" << endl;
+               system("pause");
+           }
+           cn.cerrar_conexion();
+       }
+
+       void borrarPuesto() {
+           int q_estado;
+           ConexionBD cn = ConexionBD();
+           cn.abrir_conexion();
+           if (cn.getConectar()) {
+               string insert = "DELETE FROM puestos WHERE idpuesto='" + var + "';";
+               const char* i = insert.c_str();
+               q_estado = mysql_query(cn.getConectar(), i);
+               if (!q_estado) {
+                   cout << "ingreso exitoso" << endl;
+               }
+               else {
+                   cout << "error al eliminar datos" << endl;
+               }
+
+           }
+           else {
+               cout << "Error al leer" << endl;
+               system("pause");
+           }
+           cn.cerrar_conexion();
+       }
+
+       void actualizarpuesto() {
+           int q_estado;
+           ConexionBD cn = ConexionBD();
+           cn.abrir_conexion();
+           if (cn.getConectar()) {
+               string insert = "UPDATE puestos\
+                             SET puesto='" + nombres + "'\
+                             WHERE idpuesto='" + var + "';";
+               const char* i = insert.c_str();
+               q_estado = mysql_query(cn.getConectar(), i);
+               if (!q_estado) {
+                   cout << "ingreso exitoso" << endl;
+                   system("pause");
+               }
+               else {
+                   cout << "error al insertar" << endl;
+                   system("pause");
+               }
+
+           }
+           else {
+               cout << "--------Error--------" << endl;
+               system("pause");
+           }
+           cn.cerrar_conexion();
+           system("pause");
+
+       }
+
+
 
 };
