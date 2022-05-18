@@ -20,6 +20,8 @@ protected:
         direccion = dir;
         telefono = tel;
         correo_electronico = ce;
+  
+
     }
 };
 

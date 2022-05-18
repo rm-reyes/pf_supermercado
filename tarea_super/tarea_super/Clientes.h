@@ -217,3 +217,159 @@ public:
         }
     }
 };
+
+/******************************************************************************************************************
+class Empleados :
+    public Persona
+{
+private: string fecha_inicio, fecha_ingreso, var;
+
+public:
+    Empleados() {
+
+    }
+    Empleados(string nom, string ape, string dir, string tel, string dpi, string ge, string fn, string idpuesto, string fi, string fin, string v) :
+        Persona(nom, ape, dir, tel, dpi, ge, fn, idpuesto) {
+        fecha_inicio = fi;
+        fecha_ingreso = fin;
+        var = v;
+
+    }
+
+   
+//set
+
+    void setNom(string nom) { nombres = nom; }
+    void setApe(string ape) { apellidos = ape; }
+    void setDir(string dir) { direccion = dir; }
+    void setTel(string tel) { telefono = tel; }
+    void setDpi(string dpi) { dpi = dpi; }
+    void setGen(string ge) {  genero = ge; }
+    void setEmail(string fn) { fecha_nacimiento = fn; }
+    void setNit(string idpuesto) { idpuesto = idpuesto; }
+    void setFInicio(string fi) { fecha_inicio = fi; }
+    void setFIngreso(string fin) { fecha_ingreso = fin; }
+
+//get
+    string getNom() { return nombres; }
+    string getApe() { return apellidos; }
+    string getDir() { return direccion; }
+    string getTel() { return telefono; }
+    string getDpi() { return dpi; }
+    string getGen() { return genero; }
+    string getEmail() { return fecha_nacimiento; }
+    string getNit() { return idpuesto; }
+    string getFInicio() { return fecha_inicio; }
+    string getFIngreso() { return fecha_ingreso; }
+    
+
+    
+   void leer() {
+        int q_estado;
+        ConexionBD cn = ConexionBD();
+        MYSQL_ROW fila;
+        MYSQL_RES* resultado;
+        cn.abrir_conexion();
+        if (cn.getConectar()) {
+            cout << "------------ DATOS DE LOS EMPLEADOS ------------" << endl;
+            string consulta = "select * from empleados";
+            const char* c = consulta.c_str();
+            q_estado = mysql_query(cn.getConectar(), c);
+            if (!q_estado) {
+                resultado = mysql_store_result(cn.getConectar());
+                while (fila = mysql_fetch_row(resultado)) {
+                    cout << fila[0] << "," << fila[1] << "," << fila[2] << "," << fila[3] << "," << fila[4] << "," << fila[5] << "," << fila[6] << "," << fila[7] <<  "," << fila[9] << "," << fila[10] << <<endl;
+                }
+
+            }
+            else {
+                cout << " ----- Error  -----" << endl;
+            }
+
+        }
+        else {
+            cout << "Error al leer" << endl;
+            system("pause");
+        }
+        cn.cerrar_conexion();
+    }
+    
+  
+   void crear() {
+        int q_estado;
+        ConexionBD cn = ConexionBD();
+        cn.abrir_conexion();
+        if (cn.getConectar()) {
+            string insert = "INSERT INTO empleados(nombres,apellidos,direccion,telefono,DPI,genero,fecha_nacimiento,idPuesto, fecha_inicio_labores,fechaingreso)VALUES('" + nombres + "','" + apellidos + "','" + direccion + "','" + telefono + "','" +  DPI + "','" + genero + "','" + fecha_nacimiento + "','" + idPuesto + "','" + fecha_inicio_labores + "','" + fechaingreso+ "'); ";
+            q_estado = mysql_query(cn.getConectar(), i);
+            if (!q_estado) {
+                cout << "ingreso exitoso" << endl;
+            }
+            else {
+                cout << "error al insertar" << endl;
+            }
+
+        }
+        else {
+            cout << "Error al leer" << endl;
+            system("pause");
+        }
+        cn.cerrar_conexion();
+    }
+    
+
+
+    void borrar() {
+        int q_estado;
+        ConexionBD cn = ConexionBD();
+        cn.abrir_conexion();
+        if (cn.getConectar()) {
+             string insert = "DELETE FROM empleados WHERE idempleado='" + var + "';";
+            const char* i = insert.c_str();
+            q_estado = mysql_query(cn.getConectar(), i);
+            if (!q_estado) {
+                cout << "ingreso exitoso" << endl;
+            }
+            else {
+                cout << "error al eliminar datos" << endl;
+            }
+
+        }
+        else {
+            cout << "Error al leer" << endl;
+            system("pause");
+        }
+        cn.cerrar_conexion();
+    }
+
+       void actualizar() {
+        int q_estado;
+        ConexionBD cn = ConexionBD();
+        cn.abrir_conexion();
+        if (cn.getConectar()) {
+        string insert = "UPDATE empleados\
+                             SET nombres='" + nombres + "',apellidos='"+ apellidos + "',direccion='" + direccion + "',telefono='" + telefono + "',DPI='" +  DPI + "',genero='" + genero + "',fecha_nacimiento='" + fecha_nacimiento + "',idPuesto='" + idPuesto + "',fecha_inicio_labores='" + fecha_inicio_labores + "',fechaingreso='" + fechaingreso+ "'\
+                             WHERE idempleado='" + var + "';";
+            const char* i = insert.c_str();
+            q_estado = mysql_query(cn.getConectar(), i);
+            if (!q_estado) {
+                cout << "ingreso exitoso" << endl;
+                system("pause");
+            }
+            else {
+                cout << "error al insertar" << endl;
+                system("pause");
+            }
+
+        }
+        else {
+            cout << "--------Error--------" << endl;
+            system("pause");
+        }
+        cn.cerrar_conexion();
+        system("pause");
+
+    }
+
+};*/
+    
