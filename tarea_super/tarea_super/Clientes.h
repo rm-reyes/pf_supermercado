@@ -218,20 +218,25 @@ public:
     }
 };
 
-/******************************************************************************************************************
+/*******************************************************************************************************************************************/
 class Empleados :
     public Persona
 {
-private: string fecha_inicio, fecha_ingreso, var;
+private: string fecha_inicio_l, fecha_ingreso,fecha_nacimiento, DPI, idPuesto, var, puesto;
 
 public:
+
     Empleados() {
 
     }
-    Empleados(string nom, string ape, string dir, string tel, string dpi, string ge, string fn, string idpuesto, string fi, string fin, string v) :
-        Persona(nom, ape, dir, tel, dpi, ge, fn, idpuesto) {
-        fecha_inicio = fi;
+  
+        Empleados(string nom, string ape, string dir, string tel, string dpi, string ge, string fn, string idpuesto, string fi, string fin, string v) :
+        Persona(nom, ape, nt, gen, dir, tel, ce) {
+
+        fecha_inicio_l = fi;
         fecha_ingreso = fin;
+        DPI = dpi;
+        idPuesto = idpuesto;
         var = v;
 
     }
@@ -243,11 +248,11 @@ public:
     void setApe(string ape) { apellidos = ape; }
     void setDir(string dir) { direccion = dir; }
     void setTel(string tel) { telefono = tel; }
-    void setDpi(string dpi) { dpi = dpi; }
+    void setDpi(string dpi) { DPI = dpi; }
     void setGen(string ge) {  genero = ge; }
     void setEmail(string fn) { fecha_nacimiento = fn; }
-    void setNit(string idpuesto) { idpuesto = idpuesto; }
-    void setFInicio(string fi) { fecha_inicio = fi; }
+    void setNit(string idpuesto) { idPuesto = idpuesto; }
+    void setFInicio(string fi) { fecha_inicio_l = fi; }
     void setFIngreso(string fin) { fecha_ingreso = fin; }
 
 //get
@@ -255,11 +260,11 @@ public:
     string getApe() { return apellidos; }
     string getDir() { return direccion; }
     string getTel() { return telefono; }
-    string getDpi() { return dpi; }
+    string getDpi() { return DPI; }
     string getGen() { return genero; }
     string getEmail() { return fecha_nacimiento; }
-    string getNit() { return idpuesto; }
-    string getFInicio() { return fecha_inicio; }
+    string getNit() { return idPuesto; }
+    string getFInicio() { return fecha_inicio_l; }
     string getFIngreso() { return fecha_ingreso; }
     
 
@@ -278,7 +283,7 @@ public:
             if (!q_estado) {
                 resultado = mysql_store_result(cn.getConectar());
                 while (fila = mysql_fetch_row(resultado)) {
-                    cout << fila[0] << "," << fila[1] << "," << fila[2] << "," << fila[3] << "," << fila[4] << "," << fila[5] << "," << fila[6] << "," << fila[7] <<  "," << fila[9] << "," << fila[10] << <<endl;
+                    cout << fila[0] << "," << fila[1] << "," << fila[2] << "," << fila[3] << "," << fila[4] << "," << fila[5] << "," << fila[6] << "," << fila[7] <<  "," << fila[9] << "," << fila[10] <<endl;
                 }
 
             }
@@ -300,8 +305,9 @@ public:
         ConexionBD cn = ConexionBD();
         cn.abrir_conexion();
         if (cn.getConectar()) {
-            string insert = "INSERT INTO empleados(nombres,apellidos,direccion,telefono,DPI,genero,fecha_nacimiento,idPuesto, fecha_inicio_labores,fechaingreso)VALUES('" + nombres + "','" + apellidos + "','" + direccion + "','" + telefono + "','" +  DPI + "','" + genero + "','" + fecha_nacimiento + "','" + idPuesto + "','" + fecha_inicio_labores + "','" + fechaingreso+ "'); ";
-            q_estado = mysql_query(cn.getConectar(), i);
+           string insert = "INSERT INTO empleados(nombres,apellidos,direccion,telefono,DPI,genero,fecha_nacimiento,idPuesto, fecha_inicio_labores,fechaingreso)VALUES('" + nombres + "','" + apellidos + "','" + direccion + "','" + telefono + "','" +  DPI + "','" + genero + "','" + fecha_nacimiento + "','" + idPuesto + "','" + fecha_inicio_l + "','" + fecha_ingreso+ "'); ";
+           const char* i = insert.c_str();
+           q_estado = mysql_query(cn.getConectar(), i);
             if (!q_estado) {
                 cout << "ingreso exitoso" << endl;
             }
@@ -348,7 +354,7 @@ public:
         cn.abrir_conexion();
         if (cn.getConectar()) {
         string insert = "UPDATE empleados\
-                             SET nombres='" + nombres + "',apellidos='"+ apellidos + "',direccion='" + direccion + "',telefono='" + telefono + "',DPI='" +  DPI + "',genero='" + genero + "',fecha_nacimiento='" + fecha_nacimiento + "',idPuesto='" + idPuesto + "',fecha_inicio_labores='" + fecha_inicio_labores + "',fechaingreso='" + fechaingreso+ "'\
+                             SET nombres='" + nombres + "',apellidos='"+ apellidos + "',direccion='" + direccion + "',telefono='" + telefono + "',DPI='" +  DPI + "',genero='" + genero + "',fecha_nacimiento='" + fecha_nacimiento + "',idPuesto='" + idPuesto + "',fecha_inicio_labores='" + fecha_inicio_l + "',fecha_ingreso='" + fecha_ingreso+ "'\
                              WHERE idempleado='" + var + "';";
             const char* i = insert.c_str();
             q_estado = mysql_query(cn.getConectar(), i);
@@ -371,5 +377,4 @@ public:
 
     }
 
-};*/
-    
+};

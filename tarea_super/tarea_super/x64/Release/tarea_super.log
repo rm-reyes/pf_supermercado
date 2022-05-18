@@ -1,42 +1,22 @@
 ﻿  Clientes.cpp
 C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(171,1): warning C4267: '=': conversión de 'size_t' a 'char'; posible pérdida de datos
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(267,4): error C2144: error de sintaxis: 'void' debe estar precedido de ';'
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(267,9): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(232,1): error C2661: 'Persona::Persona': ninguna función sobrecargada acepta 8 argumentos
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(248,32): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(258,30): error C2065: 'dpi': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(260,32): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(261,30): error C2065: 'idpuesto': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(281,204): error C2059: error de sintaxis: '<<'
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,251): error C2065: 'DPI': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,282): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,309): error C2065: 'idPuesto': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,328): error C2065: 'fecha_inicio_labores': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,359): error C2065: 'fechaingreso': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(304,54): error C2065: 'i': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,157): error C2065: 'DPI': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,212): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,248): error C2065: 'idPuesto': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,288): error C2065: 'fecha_inicio_labores': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,332): error C2065: 'fechaingreso': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,27): error C2065: 'nt': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,31): error C2065: 'gen': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,46): error C2065: 'ce': identificador no declarado
   tarea_super.cpp
 C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(171,1): warning C4267: '=': conversión de 'size_t' a 'char'; posible pérdida de datos
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(267,4): error C2144: error de sintaxis: 'void' debe estar precedido de ';'
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(267,9): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(232,1): error C2661: 'Persona::Persona': ninguna función sobrecargada acepta 8 argumentos
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(248,32): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(258,30): error C2065: 'dpi': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(260,32): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(261,30): error C2065: 'idpuesto': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(281,204): error C2059: error de sintaxis: '<<'
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,251): error C2065: 'DPI': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,282): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,309): error C2065: 'idPuesto': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,328): error C2065: 'fecha_inicio_labores': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(303,359): error C2065: 'fechaingreso': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(304,54): error C2065: 'i': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,157): error C2065: 'DPI': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,212): error C2065: 'fecha_nacimiento': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,248): error C2065: 'idPuesto': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,288): error C2065: 'fecha_inicio_labores': identificador no declarado
-C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(351,332): error C2065: 'fechaingreso': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,27): error C2065: 'nt': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,31): error C2065: 'gen': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\Clientes.h(234,46): error C2065: 'ce': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(188,40): error C2065: 'nt': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(188,44): error C2065: 'gen': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(188,59): error C2065: 'ce': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(199,39): error C2065: 'nt': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(199,43): error C2065: 'gen': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(199,58): error C2065: 'ce': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(233,39): error C2065: 'nt': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(233,43): error C2065: 'gen': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(233,58): error C2065: 'ce': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(241,39): error C2065: 'nt': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(241,43): error C2065: 'gen': identificador no declarado
+C:\Users\Rita\Desktop\proyectofinal\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(241,58): error C2065: 'ce': identificador no declarado

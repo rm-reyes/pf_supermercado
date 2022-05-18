@@ -13,6 +13,11 @@ void borrarPro();
 void actualizarPro();
 void leerPro();
 
+void empleados_crear();
+void empleados_borrar();
+void empleados_actualizar();
+void empleados_leer();
+
 int main(){
     /*
     int q_estado;
@@ -51,6 +56,15 @@ void M_clientes() {
         case 3: actualizarPro(); break;
 
         case 4: borrarPro(); break;
+        
+        case 5: empleados_crear(); break;
+        
+        case 6: empleados_borrar(); break;
+
+        case 7: empleados_crear(); break;
+
+        case 8: empleados_leer(); break;
+
 
         case 0: exit(-1);
 
@@ -139,3 +153,98 @@ void leerPro() {
     Clientes c = Clientes(nom, ape, nt, gen, dir, tel, ce, fi, v);
     c.leer();
 }
+    /*************************************************************************************************************************/
+
+
+void empleados_crear() {
+    system("cls");
+   
+    string nom, ape, dir, tel, dpi, ge, fn, idpuesto, fi, fin, v;
+
+    getline(cin, nom);
+    cout << "ingrese nombre: ";
+    getline(cin, nom);
+    cout << "ingrese apellido: ";
+    getline(cin, ape);
+    cout << "ingrese direccion: ";
+    getline(cin, dir);
+    cout << "ingrese telefono: ";
+    getline(cin, tel);
+    cout << "ingrese DPI: ";
+    getline(cin, dpi);
+    cout << "ingrese genero: ";
+    getline(cin, ge);
+    cout << "ingrese fecha nacimiento: ";
+    getline(cin, fn);
+    cout << "ingrese idpuesto: ";
+    getline(cin, idpuesto);
+    cout << "ingrese fecha inicio: ";
+    getline(cin, fi);
+    cout << "ingrese fecha ingreso: ";
+    getline(cin, fin);
+
+
+
+    Empleados a = Empleados (nom, ape, nt, gen, dir, tel, ce, fi, v);
+    a.crear();
+}
+
+
+void empleados_borrar() {
+    string nom, ape, dir, tel, dpi, ge, fn, idpuesto, fi, fin, v;
+    getline(cin, nom);
+    cout << "ingrese id del producto a eliminar: ";
+    getline(cin, v);
+
+    Empleados a = Empleados(nom, ape, nt, gen, dir, tel, ce, fi, v);
+    a.borrar();
+}
+
+
+void empleados_actualizar() {
+    system("cls");
+    string nom, ape, dir, tel, dpi, ge, fn, idpuesto, fi, fin, v;
+    getline(cin, v);
+    cout << "ingrese id del empleado a actualizar: ";
+    getline(cin, v);
+    cout << "=================================================" << endl;
+    getline(cin, nom);
+    cout << "ingrese nombre: ";
+    getline(cin, nom);
+    cout << "ingrese apellido: ";
+    getline(cin, ape);
+    cout << "ingrese direccion: ";
+    getline(cin, dir);
+    cout << "ingrese telefono: ";
+    getline(cin, tel);
+    cout << "ingrese DPI: ";
+    getline(cin, dpi);
+    cout << "ingrese genero: ";
+    getline(cin, ge);
+    cout << "ingrese fecha nacimiento: ";
+    getline(cin, fn);
+    cout << "ingrese idpuesto: ";
+    getline(cin, idpuesto);
+    cout << "ingrese fecha inicio: ";
+    getline(cin, fi);
+    cout << "ingrese fecha ingreso: ";
+    getline(cin, fin);
+
+    Empleados a = Empleados(nom, ape, nt, gen, dir, tel, ce, fi, v);
+    a.actualizar();
+
+}
+
+void empleados_leer() {
+    string nom, ape, dir, tel, dpi, ge, fn, idpuesto, fi, fin, v;
+    cout << "--------------TABLA empleados----------------------------" << endl;
+    Empleados a = Empleados(nom, ape, nt, gen, dir, tel, ce, fi, v);
+    a.leer();
+
+}
+    
+    
+
+
+    
+    
