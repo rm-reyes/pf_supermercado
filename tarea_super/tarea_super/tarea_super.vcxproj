@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="Clientes.h" />
     <ClInclude Include="ConexionDB.h" />
+    <ClInclude Include="menu.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Ventas.h" />
   </ItemGroup>
