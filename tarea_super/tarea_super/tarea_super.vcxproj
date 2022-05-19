@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -142,14 +142,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Clientes.cpp" />
+    <ClCompile Include="compra.cpp" />
+    <ClCompile Include="Compras_detalle.cpp" />
     <ClCompile Include="ConexionDB.cpp" />
     <ClCompile Include="Persona.cpp" />
+    <ClCompile Include="Proveedor.cpp" />
     <ClCompile Include="tarea_super.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clientes.h" />
+    <ClInclude Include="compra.h" />
+    <ClInclude Include="Compras_detalle.h" />
     <ClInclude Include="ConexionDB.h" />
     <ClInclude Include="Persona.h" />
+    <ClInclude Include="Proveedor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
