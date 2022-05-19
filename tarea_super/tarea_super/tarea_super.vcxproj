@@ -144,6 +144,9 @@
     <ClCompile Include="Clientes.cpp" />
     <ClCompile Include="ConexionDB.cpp" />
     <ClCompile Include="Persona.cpp" />
+    <ClCompile Include="Proveedores.cpp" />
+    <ClCompile Include="Marcas.cpp" />
+    <ClCompile Include="menuProv.cpp" />
     <ClCompile Include="tarea_super.cpp" />
     <ClCompile Include="ventas.cpp" />
   </ItemGroup>
@@ -152,6 +155,7 @@
     <ClInclude Include="ConexionDB.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="Persona.h" />
+    <ClInclude Include="Proveedores.h" />
     <ClInclude Include="Ventas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
