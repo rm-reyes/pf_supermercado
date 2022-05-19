@@ -1,9 +1,7 @@
-﻿  ConexionDB.cpp
+﻿  Proveedor.cpp
   tarea_super.cpp
-C:\Users\Kenneth Prado\OneDrive\Escritorio\PROYECTO FINAL\pf_supermercado\tarea_super\tarea_super\tarea_super.cpp(10,9): warning C4101: 'q_estado': variable local sin referencia
   Generando código
-  0 of 14 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 142 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Generación de código finalizada
   tarea_super.vcxproj -> C:\Users\Kenneth Prado\OneDrive\Escritorio\PROYECTO FINAL\pf_supermercado\tarea_super\x64\Release\tarea_super.exe

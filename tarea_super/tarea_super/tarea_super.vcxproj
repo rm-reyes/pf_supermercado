@@ -142,10 +142,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConexionDB.cpp" />
+    <ClCompile Include="Proveedor.cpp" />
     <ClCompile Include="tarea_super.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConexionDB.h" />
+    <ClInclude Include="Proveedor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
