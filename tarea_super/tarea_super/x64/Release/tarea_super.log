@@ -1,8 +1,1 @@
-﻿  tarea_super.cpp
-D:\UNI\3_semestre\programacion\pf_final_versiones\pf_supermercado_origin\tarea_super\tarea_super\Clientes.h(171,1): warning C4267: '=': conversión de 'size_t' a 'char'; posible pérdida de datos
-  Generando código
-  6 of 186 functions ( 3.2%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Generación de código finalizada
-  tarea_super.vcxproj -> D:\UNI\3_semestre\programacion\pf_final_versiones\pf_supermercado_origin\tarea_super\x64\Release\tarea_super.exe
+﻿  tarea_super.vcxproj -> D:\UNI\3_semestre\programacion\pf_final_versiones\pf_supermercado_origin\tarea_super\x64\Release\tarea_super.exe
